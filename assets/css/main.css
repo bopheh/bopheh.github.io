@@ -2783,10 +2783,10 @@ input, select, textarea {
 			}
 
 			.tiles article:before {
-				-moz-transition: opacity 0.5s ease;
-				-webkit-transition: opacity 0.5s ease;
-				-ms-transition: opacity 0.5s ease;
-				transition: opacity 0.5s ease;
+				-moz-transition: opacity 0.9s ease;
+				-webkit-transition: opacity 0.9s ease;
+				-ms-transition: opacity 0.9s ease;
+				transition: opacity 0.9s ease;
 				bottom: 0;
 				content: '';
 				display: block;
@@ -3427,10 +3427,10 @@ input, select, textarea {
 		}
 
 		#banner > .inner {
-			-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
-			-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
-			-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
-			transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
+			-moz-transition: opacity 1.5s ease, -moz-transform 0.9s ease-out, -moz-filter 0.9s ease, -webkit-filter 0.9s ease;
+			-webkit-transition: opacity 1.5s ease, -webkit-transform 0.9s ease-out, -webkit-filter 0.9s ease, -webkit-filter 0.9s ease;
+			-ms-transition: opacity 1.5s ease, -ms-transform 0.9s ease-out, -ms-filter 0.9s ease, -webkit-filter 0.9s ease;
+			transition: opacity 1.5s ease, transform 0.9s ease-out, filter 0.9s ease, -webkit-filter 0.9s ease;
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
