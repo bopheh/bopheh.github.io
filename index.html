@@ -158,64 +158,41 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<!-- 這一行需要加上onsubmit="return mailto()" -->
+								<form method="post" action="#"  onsubmit="return mailto()">
 									<div class="fields">
 										<div class="field half">
-											<label for="name">姓名:</label>
+											<label for="name">名稱</label>
 											<input type="text" name="name" id="name" />
 										</div>
 										<div class="field half">
-											<label for="email">電子郵件:</label>
+											<label for="email">Email</label>
 											<input type="text" name="email" id="email" />
 										</div>
 										<div class="field">
-											<label for="message">訊息通知:</label>
+											<label for="message">訊息</label>
 											<textarea name="message" id="message" rows="6"></textarea>
 										</div>
 									</div>
+							
 									<ul class="actions">
-										<li><input type="submit" value="傳送訊息" class="primary" /></li>
+										<li><input type="submit" value="傳送" class="primary" /></li></a>
 										<li><input type="reset" value="清除" /></li>
 									</ul>
+							
+									<!-- 呼叫email程式的語法:start -->
+									<script>
+										function mailto() {
+											name = document.getElementsByName('name')[0].value; // 把使用者輸入的名稱拿出來用
+											email = document.getElementsByName('email')[0].value; // 把使用者輸入的email拿出來用
+											message = document.getElementsByName('message')[0].value.replaceAll('\n', '%0D%0A'); // 把使用者輸入的內容拿出來用
+											window.location.href = "mailto:xxxxxxxxxx@gmail.com?subject=我沒有問題&body=您好, 我是" + name + ":%0D%0A" + message;
+											return false;
+										}
+									</script>
+									<!-- 呼叫email程式的語法:end -->
 								</form>
 							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>電子郵件:</h3>
-										<a href="#">information@cc.cc</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>電話:</h3>
-										<span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>地址:</h3>
-										<span>桃園市大園區 #8888<br />
-										<br />
-										(Da Yuan District), Taoyuan City, Taiwan</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon brands alt fa-line"></span>
-										<h3>LINE Message:</h3>
-										<span>Bar Code<br />
-										<br />
-										</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
-
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
