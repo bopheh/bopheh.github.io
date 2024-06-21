@@ -3953,3 +3953,20 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+        .fixed-button {
+			position: fixed;
+			bottom: 20px; /* 距離底部 20 像素 */
+			right: 20px; /* 距離右邊 20 像素 */
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #ffffff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			box-shadow: 0 2px 4px rgba(182, 194, 14, 0.2);
+		}
+		
+		.fixed-button:hover {
+			background-color: #0056b3;
+		}		

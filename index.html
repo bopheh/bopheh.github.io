@@ -12,9 +12,29 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<style>
+		/* 內嵌 CSS 樣式 */
+		.fixed-button {
+			position: fixed;
+			bottom: 20px; /* 距離底部 20 像素 */
+			right: 20px; /* 距離右邊 20 像素 */
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #ffffff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+		}
+		
+		.fixed-button:hover {
+			background-color: #0056b3;
+		}
+		</style>
+			<body class="is-preload">
 
-		<!-- Wrapper -->
+				<button class="fixed-button">固定按鈕</button>
+				<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
